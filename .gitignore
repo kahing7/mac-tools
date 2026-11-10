@@ -1,0 +1,7 @@
+# 构建产物
+PerfBar.app/
+*.o
+*.dSYM/
+
+# macOS
+.DS_Store
