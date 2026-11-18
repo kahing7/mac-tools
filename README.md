@@ -2,11 +2,11 @@
 
 个人 macOS 实用工具集。第一个成员：
 
-## 性能监控悬浮工具（PerfBar）
+## 性能监控悬浮工具（JT bar）
 
 macOS 桌面横向性能悬浮条，实时显示 CPU、内存、磁盘活动和网络上下行吞吐量。
 
-![PerfBar 悬浮条](docs/screenshot.png)
+![JT bar 悬浮条](docs/screenshot.png)
 
 ### 功能
 
@@ -33,13 +33,13 @@ macOS 桌面横向性能悬浮条，实时显示 CPU、内存、磁盘活动和�
 git clone https://github.com/kahing7/mac-tools.git
 cd mac-tools
 ./build.sh
-open PerfBar.app
+open "JT bar.app"
 ```
 
-构建产物为 `PerfBar.app`（无 Dock 图标，常驻菜单栏）。要让它出现在启动台，把 app 拷进「应用程序」文件夹，并在「系统设置 → 通用 → 登录项」中添加自启动：
+构建产物为 `JT bar.app`（内部可执行文件名仍为 PerfBar；无 Dock 图标，常驻菜单栏）。要让它出现在启动台，把 app 拷进「应用程序」文件夹，并在「系统设置 → 通用 → 登录项」中添加自启动：
 
 ```bash
-cp -R PerfBar.app /Applications/
+cp -R "JT bar.app" /Applications/
 ```
 
 工具链自动探测：优先使用正式版 Xcode，其次 Xcode-beta，最后回退 Command Line Tools。

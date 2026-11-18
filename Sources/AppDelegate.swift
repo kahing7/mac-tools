@@ -12,7 +12,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 
         // 托盘菜单
         let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
-        item.button?.image = NSImage(systemSymbolName: "gauge", accessibilityDescription: "性能监控")
+        item.button?.image = NSImage(systemSymbolName: "gauge", accessibilityDescription: "JT bar")
         statusItem = item
 
         let menu = NSMenu()

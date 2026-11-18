@@ -34,9 +34,9 @@ cat > "$APP/Contents/Info.plist" <<'EOF'
     <key>CFBundleIdentifier</key>
     <string>com.local.perfbar</string>
     <key>CFBundleName</key>
-    <string>PerfBar</string>
+    <string>JT bar</string>
     <key>CFBundleDisplayName</key>
-    <string>PerfBar</string>
+    <string>JT bar</string>
     <key>CFBundleExecutable</key>
     <string>PerfBar</string>
     <key>CFBundlePackageType</key>
@@ -44,7 +44,7 @@ cat > "$APP/Contents/Info.plist" <<'EOF'
     <key>CFBundleIconFile</key>
     <string>AppIcon</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.2.0</string>
+    <string>0.2.1</string>
     <key>LSUIElement</key>
     <true/>
     <key>NSHighResolutionCapable</key>
