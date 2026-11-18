@@ -36,7 +36,13 @@ cd mac-tools
 open PerfBar.app
 ```
 
-构建产物为 `PerfBar.app`（无 Dock 图标，常驻菜单栏）。建议在「系统设置 → 通用 → 登录项」中添加自启动。
+构建产物为 `PerfBar.app`（无 Dock 图标，常驻菜单栏）。要让它出现在启动台，把 app 拷进「应用程序」文件夹，并在「系统设置 → 通用 → 登录项」中添加自启动：
+
+```bash
+cp -R PerfBar.app /Applications/
+```
+
+工具链自动探测：优先使用正式版 Xcode，其次 Xcode-beta，最后回退 Command Line Tools。
 
 ### 项目结构
 
@@ -45,7 +51,8 @@ open PerfBar.app
 - `Sources/BarPanel.swift`：悬浮面板、毛玻璃主视图、详情展开与位置记忆
 - `Sources/AppDelegate.swift`：应用入口与托盘菜单
 - `Sources/main.swift`：程序启动
-- `build.sh`：一键构建脚本（编译 + 打包 .app + ad-hoc 签名）
+- `Resources/AppIcon.icns`：应用图标
+- `build.sh`：一键构建脚本（编译 + 打包 .app + 图标 + ad-hoc 签名）
 
 ### 数据来源
 
